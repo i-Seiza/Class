@@ -25,6 +25,9 @@
     <Filter Include="Text">
       <UniqueIdentifier>{952322f3-c1fd-4d7e-9544-41ab7700253b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="inifile">
+      <UniqueIdentifier>{84403618-2e65-4f7c-b374-51c8e0b2ddc1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -54,6 +57,9 @@
     <ClInclude Include="def.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="iniFile\Inifile.h">
+      <Filter>inifile</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -76,6 +82,9 @@
     </ClCompile>
     <ClCompile Include="Text\Text.cpp">
       <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="iniFile\Inifile.cpp">
+      <Filter>inifile</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

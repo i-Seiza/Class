@@ -72,6 +72,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>Text;Log;FileIO;DiskVolume;G:\boost;G:\boost\libs\uuid\include\;G:\boost\libs\utility\include\;$(MsBuildProjectDirectory);$(IncludePath)</IncludePath>
+    <LibraryPath>G:\boost\stage\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -79,6 +80,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>Text;Log;FileIO;DiskVolume;G:\boost;G:\boost\libs\uuid\include\;G:\boost\libs\utility\include\;$(MsBuildProjectDirectory);$(IncludePath)</IncludePath>
+    <LibraryPath>G:\boost\stage\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -150,6 +152,7 @@
     <ClInclude Include="def.h" />
     <ClInclude Include="DiskVolume\DiskVolume.h" />
     <ClInclude Include="FileIO\FileIO.h" />
+    <ClInclude Include="iniFile\Inifile.h" />
     <ClInclude Include="Log\Log.h" />
     <ClInclude Include="Log\LogFile.h" />
     <ClInclude Include="stdafx.h" />
@@ -160,6 +163,7 @@
     <ClCompile Include="Class.cpp" />
     <ClCompile Include="DiskVolume\DiskVolume.cpp" />
     <ClCompile Include="FileIO\FileIO.cpp" />
+    <ClCompile Include="iniFile\Inifile.cpp" />
     <ClCompile Include="Log\Log.cpp" />
     <ClCompile Include="Log\LogFile.cpp" />
     <ClCompile Include="stdafx.cpp">

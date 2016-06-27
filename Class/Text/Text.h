@@ -4,7 +4,6 @@
 #include <boost/cast.hpp>
 #include <boost/format.hpp>
 
-typedef std::basic_string<TCHAR> tstring;
 
 class Text
 {

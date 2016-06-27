@@ -1,10 +1,10 @@
 #pragma once
 #include <Windows.h>
 #include <string>
-#include <boost/lexical_cast.hpp>
-#include <boost/format.hpp>
+
 #include <Objbase.h>
 #include "Text.h"
+#include "def.h"
 
 class CLog
 {
