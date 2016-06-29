@@ -4,6 +4,7 @@
 #include <string>
 #include <map>
 #include <vector>
+#include <algorithm>
 
 #include <boost/tokenizer.hpp>
 #include <boost/foreach.hpp>
@@ -13,7 +14,7 @@
 #include <boost/format.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
 
-
+#include <boost/optional.hpp>
 #include <boost/xpressive/xpressive.hpp>
 
 
