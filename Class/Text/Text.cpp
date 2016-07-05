@@ -117,3 +117,26 @@ std::wstring Text::ToWide(const boost::wformat &src)
 {
 	return src.str();
 }
+
+tstring Text::ExpandEnvironmentStrings(const _TCHAR *lpSrc)
+{
+	tstring buffer;
+	buffer.resize(256);
+	for (;;)
+	{
+		DWORD result = ::ExpandEnvironmentStrings(lpSrc, &buffer[0], boost::numeric_cast<DWORD>(buffer.size()));
+		if (result == 0)
+		{
+			return tstring();
+		}
+		else if (result <= buffer.size())
+		{
+			buffer.resize(result - 1);
+			return buffer;
+		}
+		else
+		{
+			buffer.resize(result);
+		}
+	}
+}

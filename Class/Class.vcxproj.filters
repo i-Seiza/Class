@@ -63,6 +63,9 @@
     <ClInclude Include="Service.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -90,6 +93,9 @@
       <Filter>inifile</Filter>
     </ClCompile>
     <ClCompile Include="Service.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>

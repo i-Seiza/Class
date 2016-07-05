@@ -22,6 +22,8 @@ public:
 	static std::wstring ToWide(const boost::format & src);
 	static std::wstring ToWide(const boost::wformat & src);
 
+	static tstring Text::ExpandEnvironmentStrings(const _TCHAR *lpSrc);
+
 private:
 	static int MultiByteToWideCharSafe(UINT CodePage, DWORD dwFlags, LPCSTR lpMultiByteStr, int cbMultiByte, LPWSTR lpWideCharStr, int cchWideChar);
 	static int WideCharToMultiByteSafe(UINT CodePage, DWORD dwFlags, LPCWSTR lpWideCharStr, int cchWideChar, LPSTR lpMultiByteStr, int cbMultiByte, LPCSTR lpDefaultChar, LPBOOL lpUsedDefaultChar);
